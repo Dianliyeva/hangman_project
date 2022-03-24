@@ -1,0 +1,228 @@
+@import url('http://fonts.cdnfonts.com/css/chalktastic');
+
+html {
+  background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -moz-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -ms-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: -o-linear-gradient(90deg, #485563 10%, #29323c 90%);
+  background: linear-gradient(90deg, #485563 10%, #29323c 90%);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden
+}
+
+body {
+  font-size: 20px;
+  color: #E8E8E8;
+  font-family: 'Chalktastic', sans-serif;
+  display: block;
+  width: 80%;
+  height: 80%;
+  min-height: auto;
+  margin: 60px auto 0 auto;
+  background-color:#305c41;
+  padding: 20px 30px;
+  overflow-y: auto;
+  box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px 0 #555;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: #B78240 solid 10px;
+  background-image: url(https://media.istockphoto.com/photos/green-chalkboard-background-picture-id1150072676?k=20&m=1150072676&s=170667a&w=0&h=rXJox0Qx3Q16sxwyhXBTDczqb1NOeAs7rvh0Lhn_xrg=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+body:after {
+  content: "";
+  display: block;
+  position: fixed;
+  -webkit-border-radius: 0.1em 0.1em 0 0.1em;
+  -khtml-border-radius: 0.1em 0.1em 0 0.1em;
+  -moz-border-radius: 0.1em 0.1em 0 0.1em;
+  -ms-border-radius: 0.1em 0.1em 0 0.1em;
+  -o-border-radius: 0.1em 0.1em 0 0.1em;
+  border-radius: 0.1em 0.1em 0 0.1em;
+  width: 85px;
+  height: 8px;
+  background: #f1f1f1;
+  top: 81%;
+  margin-top: 95px;
+  margin-right: 65px;
+  right: 5%;
+  box-shadow: inset 0 -4px 1px rgba(0, 0, 0, 0.3), -1px -1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 rgba(0, 0, 0, 0.3)
+}
+
+a {
+  color: #ff0
+}
+  
+.App {
+  color: white;
+  position: fixed;
+  bottom:9%;
+  right:40%;
+}
+
+.wordcontainer {
+  justify-content: space-between;
+}
+
+.letter{
+  font-size: 20px;
+  display: inline-block;
+  padding: 2rem;
+  margin: auto;
+}
+
+.fullman {
+  background-color: rgba(47, 133, 133, 0);
+  position: relative;
+  }
+
+.gallow {
+  background-color:none;
+  display: block;
+  margin-left: 20%;
+  margin-right: 50%;
+  margin-top: 0%;
+  width: 40%;
+  position: absolute;
+  }
+
+#head {
+  display: block;
+  margin-left: 39.5%;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 15%;
+  }
+
+#body {
+  display: block;
+  margin-left: 39.8%;
+  margin-right: auto;
+  margin-top: -5%;
+  width: 15%;
+  }
+  
+#leftarm {
+  display: block;
+  margin-left: auto;
+  margin-right: 49.5%;
+  margin-top: -12%;
+  width: 10%;
+  }
+  
+#rightarm {
+  display: block;
+  margin-left: 44.7%;
+  margin-right: auto;
+  margin-top: -8.1%;
+  width: 10%;
+  }
+
+#leftleg {
+  display: block;
+  margin-left: auto;
+  margin-right: 49.5%;
+  margin-top: .5%;
+  width: 10%;
+  }
+
+#rightleg {
+  display: block;
+  margin-left: 44.7%;
+  margin-right: auto;
+  margin-top: -8.2%;
+  width: 10%;
+  }
+
+#wrongword {
+  position: absolute;
+  top: 0;
+  float: left;
+  }
+
+#finalMessage {
+  border: 2px #fff solid;
+  border-radius: 8px;
+  background-color: #e34754;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 42%;
+  max-width: 40rem;
+  width: 75%;
+  margin: auto;
+  transform: translateY(100%);
+  transition: transform 200ms ease-in;
+}
+
+#finalMessage.visible {
+  transform: translateY(-20%);
+}
+
+p {
+  margin: 2rem;
+  font-size: 23px;
+}
+
+form { 
+  display: flex; 
+}
+
+input[type=text] { 
+  background-color: transparent;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  flex-grow: 0;
+ }
+
+ #text {
+  font-family: 'Chalktastic', sans-serif;
+  color: white;
+  font-size: 20px;
+ }
+
+ #submitButton {
+  font-family: 'Chalktastic', sans-serif;
+  color:white;
+  background-color: transparent;
+  width: 15%;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+  flex-grow: 0;
+ }
+
+ #submitButton:hover {
+  background-color: #ffffff65;
+ }
+
+ #restartButton {
+  font-family: 'Chalktastic', sans-serif;
+  color: white;
+  background-color: transparent;
+  width: 15%;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+  flex-grow: 0;
+ }
+
+ #restartButton:hover {
+  background-color: #ffffff65;
+ }
